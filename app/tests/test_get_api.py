@@ -1,6 +1,7 @@
 from app.config import Config
 
 def test_read_vehicle_registrations():
+
     # FETCH THE LIST OF VEHICLE REGISTRATIONS
     response = Config.client.get("/vehicle-registration")
     assert response.status_code == 200
@@ -24,6 +25,7 @@ def test_read_vehicle_registrations():
 
 
 def test_read_parking_spots():
+
     # FETCH THE LIST OF PARKING SPOTS
     response = Config.client.get("/parking/")
     assert response.status_code == 200
