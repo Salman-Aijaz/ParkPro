@@ -3,7 +3,7 @@
 
 # 🚗 Parking Management System
 
-A comprehensive parking management system designed for high-traffic parking lots. This system is built using **FastAPI** for the backend, **PostgreSQL** (via **Neon DB**) as the primary database, **Redis** for managing the queuing system (FIFO), and **Pydantic** for data validation. **Pytest** is utilized to ensure robust testing and coverage of unit tests.
+A comprehensive parking management system designed for high-traffic parking lots. This system is built using **FastAPI** for the backend, **PostgreSQL** (via **Neon DB**) as the primary database, **SQLAlchemy** for ORM functionality, **Redis** for managing the queuing system (FIFO), and **Pydantic** for data validation. **Pytest** is utilized to ensure robust testing and coverage of unit tests.
 
 ## 📝 Project Overview
 
@@ -41,7 +41,8 @@ Key functionalities include:
 ## 🚀 Tech Stack
 
 - **FastAPI**: High-performance backend framework for building APIs.
-- **PostgreSQL (Neon DB)**: SQL database for storing and managing data.
+- **PostgreSQL**: (Neon DB)**: SQL database for storing and managing data.
+- **SQLAlchemy**: ORM library for managing database models and queries.
 - **Redis**: In-memory data store used here for the queuing system.
 - **Pydantic**: Data validation and settings management.
 - **Pytest**: Framework for testing, including unit tests to ensure code reliability.
